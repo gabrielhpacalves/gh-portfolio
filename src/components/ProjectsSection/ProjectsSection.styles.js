@@ -30,7 +30,7 @@ export const ProjectsGrid = styled.div`
   margin: 0 auto;
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr; /* Força uma coluna única em telas menores */
+    grid-template-columns: 1fr; 
     gap: 20px;
   }
 `;
