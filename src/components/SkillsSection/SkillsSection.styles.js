@@ -4,13 +4,22 @@ export const SkillsContainer = styled.section`
   padding: 50px;
   background-color: #1a1a2e;
   text-align: center;
-  scroll-margin-top: 80px; /* Para ajustar a rolagem e não esconder a seção atrás do menu fixo, caso você o fixe */
+  scroll-margin-top: 80px;
+
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+  }
 `;
 
 export const Title = styled.h2`
   font-size: 2.5rem;
   color: #fff;
   margin-bottom: 40px;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
 `;
 
 export const SkillsGrid = styled.div`
@@ -19,6 +28,11 @@ export const SkillsGrid = styled.div`
   gap: 30px;
   max-width: 900px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+  }
 `;
 
 export const SkillItem = styled.div`
@@ -39,9 +53,17 @@ export const SkillItem = styled.div`
 export const SkillIcon = styled.span`
   font-size: 3rem;
   margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 export const SkillName = styled.p`
   font-size: 1.2rem;
   color: #ccc;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;

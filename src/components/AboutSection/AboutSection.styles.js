@@ -4,6 +4,10 @@ export const AboutContainer = styled.section`
   padding: 50px;
   background-color: #1a1a2e;
   scroll-margin-top: 80px;
+
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -11,6 +15,11 @@ export const Title = styled.h2`
   color: #fff;
   text-align: center;
   margin-bottom: 40px;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
 `;
 
 export const Content = styled.div`
@@ -23,6 +32,7 @@ export const Content = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     text-align: center;
+    gap: 30px;
   }
 `;
 

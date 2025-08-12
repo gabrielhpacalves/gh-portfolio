@@ -5,12 +5,21 @@ export const ProjectsContainer = styled.section`
   background-color: #111122;
   text-align: center;
   scroll-margin-top: 80px;
+
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+  }
 `;
 
 export const Title = styled.h2`
   font-size: 2.5rem;
   color: #fff;
   margin-bottom: 40px;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
 `;
 
 export const ProjectsGrid = styled.div`
@@ -19,6 +28,11 @@ export const ProjectsGrid = styled.div`
   gap: 30px;
   max-width: 1100px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr; /* Força uma coluna única em telas menores */
+    gap: 20px;
+  }
 `;
 
 export const ProjectCard = styled.div`
@@ -31,6 +45,10 @@ export const ProjectCard = styled.div`
 
   &:hover {
     transform: scale(1.05);
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
   }
 `;
 
